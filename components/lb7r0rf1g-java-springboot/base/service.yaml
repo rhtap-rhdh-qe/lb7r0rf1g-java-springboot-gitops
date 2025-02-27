@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lb7r0rf1g-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lb7r0rf1g-java-springboot 
+  name: lb7r0rf1g-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: lb7r0rf1g-java-springboot 
